@@ -362,3 +362,38 @@
   </body>
 </html>
 ```
+## 연습문제2-1
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2>책은 나를 크게한다.</h2>
+    <p>책은 우리가 경험할 수 없는 다른 세계를 간접 경험을 해주게 하며 관련분야의 지식을 충족시킨다.</p>
+    <img src="../images/책.webp" alt="책">
+    <p>독서를 통한 정신수양</p>
+  </body>
+</html>
+```
+## 연습문제2-2
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      li{list-style-type:none;}
+    </style>
+  </head>
+  <body>
+    <h2>네이버로 연결해 봅시다.</h2>
+    <li><a href="https://www.naver.com/">네이버로 이동</a></li>
+    <h2>다음으로 연결해 봅시다.</h2>
+    <li><a href="https://www.daum.net/"><img src="../images/다음.png" alt="다음으로" width="200"></a></li>
+  </body>
+</html>
+```
