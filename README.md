@@ -429,3 +429,66 @@
         </style>
     
 ```
+
+## 기본 CSS틀
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style>
+header {
+	width: 800px;
+	height:600px;
+	text-align: center;
+	background-color: #99ffff;
+	margin: 20px;
+	border: 1px solid black;
+}
+
+#navi ul li {
+
+	list-style: none;
+	color: white;
+	background: #ffff66;
+	float: left;
+	line-height: 30px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#navi .menuLink {
+	text-decoration: none;
+	color: black;
+	display: block;
+	width: 180px;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: "맑은고딕";
+}
+
+#navi .menuLink:hover {
+	color: blue;
+	background: #ffcc00;
+}
+</style>
+</head>
+<body>
+	<header>
+
+		<nav id="navi">
+			<h1>스포츠 회원 관리 프로그램</h1>
+
+			<ul>
+				<li><a class="menuLink" href="#">회원 가입</a></li>
+				<li><a class="menuLink" href="#">회원 정보</a></li>
+				<li><a class="menuLink" href="#">정보 수정</a></li>
+				<li><a class="menuLink" href="#">회원 삭제</a></li>
+			</ul>
+		</nav>
+
+	</header>
+</body>
+</html>
+```
