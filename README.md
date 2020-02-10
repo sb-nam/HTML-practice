@@ -492,3 +492,173 @@ header {
 </body>
 </html>
 ```
+
+## html 컨테이너
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../CSS/레이아웃.css">
+</head>
+<body>
+	<div id="container1">
+		<nav class="box1">
+			<h1>Column1</h1>
+			<p>some text.....</p>
+		</nav>
+		<nav class="box2">
+			<h1>Column2</h1>
+			<p>some text.....</p>
+		</nav>
+	</div>
+	<div id="container2">
+		<nav class="box3">
+			<h1>Column1</h1>
+			<p>some text.....</p>
+		</nav>
+		<nav class="box4">
+			<h1>Column2</h1>
+			<p>some text.....</p>
+		</nav>
+		<nav class="box5">
+			<h1>Column2</h1>
+			<p>some text.....</p>
+		</nav>
+	</div>
+	<div id="container3">
+		<nav class="box6">
+			<h1>Column1</h1>
+			<p>some text.....</p>
+		</nav>
+		<nav class="box7">
+			<h1>Column2</h1>
+			<p>some text.....</p>
+		</nav>
+		<nav class="box8">
+			<h1>Column2</h1>
+			<p>some text.....</p>
+		</nav>
+		<nav class="box9">
+			<h1>Column2</h1>
+			<p>some text.....</p>
+		</nav>
+	</div>
+
+</body>
+</html>
+```
+
+## CSS 컨테이너
+```html
+@charset "EUC-KR";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#container1 {
+
+	width: 800px;
+	height: 200px;
+	border: 1px solid black;
+	margin: 30px;
+}
+
+.box1 {
+    float:left;
+	width: 50%;
+	height: 100%;
+	background: #cccccc;
+	padding-left:20px;
+	padding-top: 20px; 
+}
+
+.box2 {
+	float:left;
+	width: 50%;
+	height: 100%;
+	background: #0033ff;
+	padding-left:20px;
+	padding-top: 20px; 
+}
+
+#container2{
+	width: 800px;
+	height: 200px;
+	border: 1px solid black;
+	margin: 30px;
+}
+
+.box3 {
+    float:left;
+	width: 33.333%;
+	height: 100%;
+	background: #cccccc;
+	padding-left:20px;
+	padding-top: 20px; 
+}
+
+.box4 {
+    float:left;
+	width: 33.333%;
+	height: 100%;
+	background: #0033ff;
+	padding-left:20px;
+	padding-top: 20px; 
+}
+
+.box5 {
+    float:left;
+	width: 33.333%;
+	height: 100%;
+	background: #ff99ff;
+	padding-left:20px;
+	padding-top: 20px; 
+}
+
+#container3{
+	width: 800px;
+	height: 200px;
+	border: 1px solid black;
+	margin: 30px;
+}
+
+.box6 {
+    float:left;
+	width: 25%;
+	height: 100%;
+	background: #cccccc;
+	padding-left:20px;
+	padding-top: 20px; 
+}
+
+.box7 {
+    float:left;
+	width: 25%;
+	height: 100%;
+	background: #0033ff;
+	padding-left:20px;
+	padding-top: 20px; 
+}
+
+.box8 {
+    float:left;
+	width: 25%;
+	height: 100%;
+	background: #ff99ff;
+	padding-left:20px;
+	padding-top: 20px; 
+}
+
+.box9 {
+    float:left;
+	width: 25%;
+	height: 100%;
+	background: #99ff99;
+	padding-left:20px;
+	padding-top: 20px; 
+}
+```
