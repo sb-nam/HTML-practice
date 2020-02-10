@@ -493,7 +493,7 @@ header {
 </html>
 ```
 
-## html 컨테이너
+## 레이아웃 html
 ```html
 <!DOCTYPE html>
 <html>
@@ -550,7 +550,7 @@ header {
 </html>
 ```
 
-## CSS 컨테이너
+## 레이아웃CSS
 ```html
 @charset "EUC-KR";
 * {
@@ -661,4 +661,154 @@ header {
 	padding-left:20px;
 	padding-top: 20px; 
 }
+```
+## 레이아웃2 html
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../CSS/레이아웃2.css">
+</head>
+<body>
+	<div id="container">
+		<header>
+			<h1>Blog Name</h1>
+		</header>
+		<section>
+			<div class="section1">
+				<h3>TITLE HEADING</h3>
+				<p>Title description,2020</p>
+				<img alt="image" src="../images/여자 운동사진.png" height="150px">
+				<p>some text...</p>
+				<p>운동하는 여자는 예쁘다</p>
+			</div>
+			<div class="section2">
+				<h3>TITLEHEADING</h3>
+				<p>Title description,2020</p>
+				<img alt="image" src="../images/코어운동.jpg" height="150px">
+				<p>Some text...</p>
+				<p>몸이 명품이다.</p>
+			</div>
+		</section>
+
+		<aside>
+			<div class="side1">
+				<h3>About Me</h3>
+				<img alt="image" src="../images/다음.png" height="100px">
+				<p>some text....</p>
+			</div>
+			<div class="side2">
+				<h3>Popular Post</h3>
+				<img alt="image" src="../images/다음.png" width="200" height="50px"> <img
+					alt="image" src="../images/다음.png" width="200" height="50px"> <img
+					alt="image" src="../images/다음.png" width="200" height="50px">
+
+			</div>
+			<div class="side3">
+				<h3>Follow Me</h3>
+				<p>Some text...</p>
+			</div>
+		</aside>
+		<footer>
+			<h3>Footer</h3>
+
+		</footer>
+	</div>
+</body>
+</html>
+```
+
+## 레이아웃2 CSS
+```html
+@charset "EUC-KR";
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	position: relative;
+	width: 960px;
+	height: 800px;
+	border: 1px solid black;
+	margin: 0 auto;
+	background: #ffffff;
+}
+
+header {
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	background: #66ccff;
+	border: 1px solid black;
+}
+
+section {
+	float: left;
+	width: 600px;
+	height: 560px;
+	margin-top: 10px;
+	margin-right: 10px;
+	
+}
+
+.section1 {
+	height: 280px;
+	padding-left: 15px;
+	padding-top: 15px;
+	border: 1px solid black;
+	background: #ffccff;
+}
+.section2 {
+	height: 280px;
+	padding-left: 15px;
+	padding-top: 15px;
+	margin-top: 10px;
+	border: 1px solid black;
+	background: #ffffcc;
+}
+aside{
+	float: right;
+	width: 340px;
+	height: 560px;
+	
+}
+
+.side1{
+	height:200px;
+	border: 1px solid black;
+	margin-top: 10px;
+	background: #ccff99;
+}
+.side2{
+	
+	height:200px;
+	border: 1px solid black;
+	margin-top: 10px;
+	background: #ccff99;
+}
+.side3{
+	
+	height:130px;
+	border: 1px solid black;
+	margin-top: 10px;
+	background: #ccff99;
+}
+footer{
+	position: absolute;
+	clear: both;
+	padding: 20px;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	background: #66ccff;
+	margin-top: 10px;
+	border: 1px solid black;
+	bottom: 0;
+}
+
 ```
