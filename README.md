@@ -812,3 +812,138 @@ footer{
 }
 
 ```
+## 시험문제
+```
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../css/200303남설빈.css">
+<script type="text/javascript">
+	function check() {
+		var checkLabel = document.querySelectorAll("th label");
+		var checkInput = document.querySelectorAll("td input");
+
+		for (var i = 0; i < checkInput.length; i++) {
+			if (checkInput[i].value == "") {
+				alert(checkLabel[i].innerText + "(을/를) 입력해주세요.");
+				checkInput[i].focus();
+				return false;
+			}
+		}
+		alert("회원 가입 되었습니다.");
+	}
+</script>
+</head>
+<body>
+
+	<header>
+		<h1>쇼핑몰 회원관리 ver 1.0</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#">회원등록</a></li>
+			<li><a href="#">회원목록조회/수정</a></li>
+			<li><a href="#">회원매출조회</a></li>
+			<li><a href="#">홈으로.</a></li>
+		</ul>
+	</nav>
+	<section>
+		<h1>홈쇼핑 회원 목록</h1>
+		<form action="#">
+			<table>
+				<tr>
+					<th><label for="number">회원번호(자동발생)</label></th>
+					<td><input id="number"></td>
+				</tr>
+				<tr>
+					<th><label for="name">회원성명</label></th>
+					<td><input id="name"></td>
+				</tr>
+				<tr>
+					<th><label for="ph">회원전화</label></th>
+					<td><input id="ph"></td>
+				</tr>
+				<tr>
+					<th><label for="address">회원주소</label></th>
+					<td><input id="address"></td>
+				</tr>
+				<tr>
+					<th><label for="today">가입일자</label></th>
+					<td><input id="today"></td>
+				</tr>
+				<tr>
+					<th><label for="ranking">고객등급[A:VIP, B:일반, C:직원]</label></th>
+					<td><input id="ranking"></td>
+				</tr>
+				<tr>
+					<th><label for="cityCode">도시번호</label></th>
+					<td><input id="cityCode"></td>
+				</tr>
+				<tr>
+					<th colspan="2"><button onclick="check()">등 록</button> <input
+						type="reset" value="취 소"></th>
+				</tr>
+			</table>
+		</form>
+	</section>
+	<footer>
+		<h3>홈쇼핑 회원등록 프로그램 입니다.</h3>
+	</footer>
+</body>
+</html>
+```
+## 시험문제 css
+```
+@charset "UTF-8";
+*{
+   margin: 0;
+   padding: 0;
+}
+header{
+   background-color: #5CD1E5;
+   color: #fff;
+}
+h1,h3{
+   text-align: center;
+   padding: 10px;
+}
+nav{
+   background-color: #0080ff;
+   color: #fff;
+   overflow: hidden;
+}
+nav ul li{
+   list-style: none;
+   float: left;
+}
+nav ul li a{
+   text-decoration: none;
+   color: #fff;
+   display:inline-block;
+   padding: 5px;
+}
+nav ul li a:hover{
+   background-color: #8000ff;
+}
+section{
+   background-color: #D5D5D5;
+   height: 550px;
+}
+table{
+   margin: 0 auto;
+   border: 1px solid black;
+}
+table th,table td{
+   border: 1px solid black;
+   padding: 3px;
+}
+button{
+   margin-right: 3px; 
+}
+footer{
+   background-color: #5CD1E5;
+   color: #fff;
+}
+```
